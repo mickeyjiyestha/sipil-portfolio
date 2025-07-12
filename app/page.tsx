@@ -2,7 +2,6 @@
 
 import {
   ArrowRight,
-  Award,
   Building2,
   Home,
   Mail,
@@ -150,7 +149,7 @@ export default function ArchitectWebsite() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
+              {/* <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <Award className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-500" />
                   <div>
@@ -162,7 +161,7 @@ export default function ArchitectWebsite() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -516,7 +515,48 @@ export default function ArchitectWebsite() {
                       id="message"
                     />
                   </div>
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 py-3 text-sm sm:text-base">
+                  <Button
+                    className="w-full bg-gray-900 hover:bg-gray-800 py-3 text-sm sm:text-base"
+                    onClick={() => {
+                      const firstName =
+                        (
+                          document.getElementById(
+                            "firstName"
+                          ) as HTMLInputElement
+                        )?.value || "";
+                      const lastName =
+                        (
+                          document.getElementById(
+                            "lastName"
+                          ) as HTMLInputElement
+                        )?.value || "";
+                      const email =
+                        (document.getElementById("email") as HTMLInputElement)
+                          ?.value || "";
+                      const phone =
+                        (document.getElementById("phone") as HTMLInputElement)
+                          ?.value || "";
+                      const projectType =
+                        (
+                          document.getElementById(
+                            "projectType"
+                          ) as HTMLSelectElement
+                        )?.value || "";
+                      const message =
+                        (
+                          document.getElementById(
+                            "message"
+                          ) as HTMLTextAreaElement
+                        )?.value || "";
+
+                      const whatsappMessage = `Halo, saya ${firstName} ${lastName}%0A%0AEmail: ${email}%0ATelepon: ${phone}%0AJenis Proyek: ${projectType}%0A%0APesan:%0A${message}`;
+
+                      window.open(
+                        `https://wa.me/6289807536992?text=${whatsappMessage}`,
+                        "_blank"
+                      );
+                    }}
+                  >
                     Kirim via WhatsApp
                   </Button>
                 </div>
