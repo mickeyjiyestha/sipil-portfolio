@@ -552,7 +552,7 @@ export default function ArchitectWebsite() {
                       const whatsappMessage = `Halo, saya ${firstName} ${lastName}%0A%0AEmail: ${email}%0ATelepon: ${phone}%0AJenis Proyek: ${projectType}%0A%0APesan:%0A${message}`;
 
                       window.open(
-                        `https://wa.me/6289807536992?text=${whatsappMessage}`,
+                        `https://wa.me/628980753699?text=${whatsappMessage}`,
                         "_blank"
                       );
                     }}
@@ -636,7 +636,7 @@ export default function ArchitectWebsite() {
             <div>
               <h4 className="font-semibold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>+62 898-0753-6992</li>
+                <li>+62 898-0753-699</li>
                 <li>gungwahy@gmail.com</li>
                 <li>
                   Kampial, Nusadua
