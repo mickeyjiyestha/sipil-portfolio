@@ -413,7 +413,7 @@ export default function ArchitectWebsite() {
                     <Phone className="h-6 w-6 text-gray-600" />
                     <div>
                       <div className="font-medium text-gray-900">Telepon</div>
-                      <div className="text-gray-600">+62 898-0753-6992</div>
+                      <div className="text-gray-600">+62 898-0753-699</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
